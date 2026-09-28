@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Order</title>
+</head>
+
+<body>
+
+<h1>Add Order</h1>
+
+<form method="POST">
+
+    <label>Customer Name:</label><br>
+    <input type="text" name="customer_name" required>
+
+    <br><br>
+
+    <label>Product Name:</label><br>
+    <input type="text" name="product_name" required>
+
+    <br><br>
+
+    <label>Quantity:</label><br>
+    <input type="number" name="quantity" required>
+
+    <br><br>
+
+    <label>Total Price:</label><br>
+    <input type="number" name="total_price" step="0.01" required>
+
+    <br><br>
+
+    <label>Status:</label><br>
+
+    <select name="status">
+        <option value="Pending">Pending</option>
+        <option value="Processing">Processing</option>
+        <option value="Shipped">Shipped</option>
+        <option value="Completed">Completed</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Add Order</button>
+
+</form>
+
+<br>
+
+<a href="/orders">← Back to Orders</a>
+
+</body>
+
+</html>

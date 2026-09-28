@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Commerce Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>Digital Commerce Management System</h1>
+    <p>Manage products, orders and AI-assisted commerce</p>
+</header>
+
+<div class="container">
+
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📦 Products</h3>
+            <p>Manage your products.</p>
+            <a href="/products">View Products</a>
+        </div>
+
+        <div class="card">
+            <h3>🛒 Orders</h3>
+            <p>Manage customer orders.</p>
+            <a href="/orders">View Orders</a>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI Assistant</h3>
+            <p>Generate product descriptions.</p>
+            <a href="/ai">Open AI Assistant</a>
+        </div>
+
+        <div class="card">
+            <h3>📊 Reports</h3>
+            <p>View commerce reports.</p>
+            <a href="/reports">View Reports</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

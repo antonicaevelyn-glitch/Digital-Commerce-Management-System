@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Assistant</title>
+</head>
+
+<body>
+
+<h1>🤖 AI Product Description Assistant</h1>
+
+<p>Enter product details and generate a product description.</p>
+
+<form method="POST">
+
+    <label>Product Name:</label><br>
+    <input type="text" name="product_name" required>
+
+    <br><br>
+
+    <label>Category:</label><br>
+    <input type="text" name="category" required>
+
+    <br><br>
+
+    <label>Key Features:</label><br>
+    <textarea name="features" rows="5" cols="40" required></textarea>
+
+    <br><br>
+
+    <button type="submit">✨ Generate Description</button>
+
+</form>
+
+{% if description %}
+
+<hr>
+
+<h2>Generated Product Description</h2>
+
+<p>{{ description }}</p>
+
+{% endif %}
+
+<br>
+
+<a href="/">← Back to Dashboard</a>
+
+</body>
+
+</html>
